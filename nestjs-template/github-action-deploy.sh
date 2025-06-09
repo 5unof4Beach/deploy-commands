@@ -10,7 +10,7 @@ env=${1:-stage}
 
     IMAGE_NAME="5unof4beach/nestjs-boiler-plate:latest"
 
-    docker compose -f ./prod/docker-compose.yml down api
+    docker compose -f ./prod/docker-compose.yml down
     docker pull $IMAGE_NAME
 
 
