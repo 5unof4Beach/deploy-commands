@@ -15,9 +15,9 @@ env=${1:-stage}
 
 
     if [[ "$env" == "production" ]]; then
-        docker compose -f ./prod/docker-compose.yml up -d api
+        docker compose -f ./prod/docker-compose.yml up -d
     elif [[ "$env" == "stage" ]]; then
-        docker compose -f ./stg/docker-compose.yml up -d api
+        docker compose -f ./stg/docker-compose.yml up -d
     else
         echo "Invalid env!"
         exit 1
